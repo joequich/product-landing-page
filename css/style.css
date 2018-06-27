@@ -1,0 +1,39 @@
+html,body{
+    background: #FFDD9D;
+
+}
+
+
+main{
+
+    display: grid;
+}
+
+#image-logo{
+    display: block;
+    width: 400px;
+}
+
+#nav-container{
+    display: flex;
+    /*background-color: red;*/
+}
+
+#nav-container > li{
+    list-style: none;
+    flex: 1;
+}
+
+.logo{
+    align-items: flex-start;
+}
+
+@media(max-width: 600px) {
+
+  #nav-container > li {
+    flex-wrap: wrap;
+    background-color: red;
+    flex-basis: 100%;
+  }
+
+}
