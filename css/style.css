@@ -10,7 +10,6 @@ main{
 }
 
 /*HEADER*/
-
 #header{
     width: 100%;
     background: white;
@@ -123,4 +122,17 @@ main{
     #email{
         width: 75%;
     }
+}
+
+#features{
+    display: flex;
+    align-items: center;
+    text-align:justify;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#works{
+    display: flex;
+    justify-content: center;
 }
