@@ -1,6 +1,6 @@
-html,body{
+body{
     background: #FFDD9D;
-
+    font-family: 'Comfortaa', cursive;
 }
 
 
@@ -9,21 +9,21 @@ main{
     margin: -10px;
 }
 
+/*HEADER*/
+
 #header{
+    width: 100%;
     background: white;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #header-img{
     display: flex;
-    margin-top: 10px;
-    width: 300px;
+    margin-top: 20px;
+    margin-left: 50px;
+    width: 350px;
 }
-
-/*nav bar*/
-/*nav bar- view*/
-
 
 /*nav bar-position*/
 
@@ -37,23 +37,23 @@ main{
     text-decoration: none;
     color: black;
     font-size: 1.3em;
+    display: block;
+    padding: 10px 16px;
 }
 
-.nav-link{
-    padding: 5px;
+#nav-bar a:hover{
+    background-color: black;
+    color: white;
 }
-
-
-
-
-
 
 
 @media(max-width: 800px) {
   #header {
       flex-direction: column;
       align-items: center;
-
+  }
+  #header-img{
+      margin: 0 auto;
   }
 }
 
@@ -61,23 +61,66 @@ main{
 
 @media(max-width: 600px) {
 
-    #header{
-        flex-flow: column wrap;
-        align-items: center;
+    #nav-bar{
+        width: 100%;
     }
-
     #nav-bar ul{
-        align-items: center;
-        flex-flow: column wrap;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #555;
+        margin: 0px;
     }
-
+    #nav-bar li{
+        border-bottom: 1px solid #555;
+        text-align: center;
+    }
+    #header-img{
+        margin-top:10px;
+        width: 300px;
+    }
 }
 
-/*princiapl*/
+/*END HEADER*/
+
+
+/*PRINCIPAL*/
 
 #principal{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#principal h1{
+    text-align: center;
+}
+
+#form{
+    width: 75%;
+    text-align: center;
+
+}
+
+#email{
+    width: 300px;
+    padding: 5px 30px 5px 5px;
+    margin: 10px;
+}
+
+#button{
+    padding:2px 15px;
+    background: #FFC300;
+    font-family: 'Anton', sans-serif;
+    font-size: 1.2em;
+    border-radius: 3px;
+}
+
+@media(max-width: 600px) {
+    #form{
+        width: 100%;
+    }
+    #email{
+        width: 75%;
+    }
 }
