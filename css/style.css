@@ -1,12 +1,26 @@
 body{
     background: #FFDD9D;
-    font-family: 'Comfortaa', cursive;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+    overflow: hidden;
+}
+
+html{
+    height: 100%;
 }
 
 
 main{
     display: grid;
-    margin: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -8px;
+    height: 100%;
+}
+
+#container{
+    position: relative;
+    overflow-y: auto;
 }
 
 /*HEADER*/
@@ -15,6 +29,7 @@ main{
     background: white;
     display: flex;
     justify-content: space-between;
+    /*box-shadow*/
 }
 
 #header-img{
@@ -107,7 +122,7 @@ main{
     margin: 10px;
 }
 
-#button{
+#submit{
     padding:2px 15px;
     background: #FFC300;
     font-family: 'Anton', sans-serif;
@@ -130,9 +145,52 @@ main{
     text-align:justify;
     justify-content: center;
     flex-direction: column;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #works{
     display: flex;
+    justify-content: center;
+
+}
+
+#pricing{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 30px 0px 30px 0px;
+}
+
+.box{
+    height: 300px;
+    width: 250px;
+    border: solid 1px black;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.box h2{
+    background-color: grey;
+    margin: 0;
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    #pricing{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .box{
+        margin-top: 20px;
+    }
+}
+
+#footer{
+    width: 100%;
+    background: black;
+    display: flex;
+    color: white;
     justify-content: center;
 }
